@@ -10,7 +10,7 @@ public class ProtoBot {
             new Thread() {
                 @Override
                 public void run() {
-                    new ChatBotClient("alliterate apple","swag").connect();
+                    new ChatBotClient("alliterate apple", "hsquizbowl").connect();
                 }
             }.run();
         } catch (Exception e) {

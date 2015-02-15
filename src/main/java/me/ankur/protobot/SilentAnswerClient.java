@@ -7,8 +7,8 @@ public class SilentAnswerClient extends ProtobowlClient {
     /**
      * Instantiate a new protobowl client
      *
-     * @param name
-     * @param room
+     * @param name name
+     * @param room room
      */
     public SilentAnswerClient(String name, String room) {
         super(name, room);
@@ -16,7 +16,7 @@ public class SilentAnswerClient extends ProtobowlClient {
 
     @Override
     public void onUpdateQuestion() {
-        this.setName("Answer: "+this.getCurrentQuestion().getFixedAnswer());
+        this.setName("Answer: " + this.getCurrentQuestion().getFixedAnswer());
     }
 
     @Override

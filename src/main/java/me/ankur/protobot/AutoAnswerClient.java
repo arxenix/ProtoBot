@@ -10,8 +10,8 @@ public class AutoAnswerClient extends ProtobowlClient {
     /**
      * Instantiate a new protobowl client
      *
-     * @param name
-     * @param room
+     * @param name name
+     * @param room room
      */
     public AutoAnswerClient(String name, String room) {
         super(name, room);
@@ -35,7 +35,7 @@ public class AutoAnswerClient extends ProtobowlClient {
                 new TimerTask() {
                     @Override
                     public void run() {
-                        System.out.println(">>> Answer: "+getCurrentQuestion().getAnswer());
+                        System.out.println(">>> Answer: " + getCurrentQuestion().getAnswer());
                         answer(getCurrentQuestion().getFixedAnswer());
                     }
                 },
